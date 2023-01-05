@@ -1,29 +1,45 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Pool;
 
 public class BulletScript : MonoBehaviour
 {
 
-    public GameObject Enemy;
-    public float speed;
-    private Rigidbody2D rb;
-    private GameObject playerBullets;
-    void Start()
+    public static BulletScript instance;
+    private List<GameObject> poolObjects = new();
+    public int poolCount;
+
+    [SerializeField] private GameObject bulletPrefab;
+
+    private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
-        rb.velocity = transform.right  * speed;
+        if (instance == null)
+        {
+            instance = this;
+        }
     }
 
-    // Update is called once per frame
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    Enemy enemy = collision.GetComponent<Enemy>();
-    //    if(enemy !=null)
-    //    {
-    //        enemy.TakeDamage(20);
-    //    }
-    //    Instantiate(playerBullets, transform.position, transform.rotation);
-    //    Destroy(gameObject);
-    //}
+    void Start()
+    {
+        for (int i = 0; i < poolCount; i++)
+        {
+            GameObject obj = Instantiate(bulletPrefab);
+            obj.SetActive(false);
+            poolObjects.Add(obj);
+        }
+    }
+
+    public GameObject GetPooledObject()
+    {
+        for(int i = 0; i < poolObjects.Count; i++)
+        {
+            if (!poolObjects[i].activeInHierarchy)
+            {
+                return poolObjects[i];
+            }
+        }
+        return null;
+    }
+
 }
