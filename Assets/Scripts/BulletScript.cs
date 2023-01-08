@@ -1,45 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Pool;
 
 public class BulletScript : MonoBehaviour
 {
-
-    public static BulletScript instance;
-    private List<GameObject> poolObjects = new();
-    public int poolCount;
-
-    [SerializeField] private GameObject bulletPrefab;
+    
+    public float life = 3f;
 
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
+        Destroy(gameObject, life);
     }
 
-    void Start()
+    private void OnCollisionEnter(Collision collision)
     {
-        for (int i = 0; i < poolCount; i++)
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            GameObject obj = Instantiate(bulletPrefab);
-            obj.SetActive(false);
-            poolObjects.Add(obj);
+            
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
+        else
+        {
+            return;
         }
     }
-
-    public GameObject GetPooledObject()
-    {
-        for(int i = 0; i < poolObjects.Count; i++)
-        {
-            if (!poolObjects[i].activeInHierarchy)
-            {
-                return poolObjects[i];
-            }
-        }
-        return null;
-    }
-
 }

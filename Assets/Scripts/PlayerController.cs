@@ -6,11 +6,11 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField]
     float speed = 10f;
-    
+
 
     void Start()
     {
-        
+
     }
 
     void FixedUpdate()
@@ -18,31 +18,53 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
 
-            transform.position += new Vector3(0, speed * Time.deltaTime, 0);
+            MoveUp();
         }
         if (Input.GetKey(KeyCode.S))
         {
+            MoveDown();
 
-            transform.position -= new Vector3(0, speed * Time.deltaTime, 0);
+
         }
 
 
-        if (Input.GetKey(KeyCode.D)) 
+        if (Input.GetKey(KeyCode.D))
         {
+            MoveRight();
 
-            transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
+
         }
 
         if (Input.GetKey(KeyCode.A))
         {
 
-            transform.position -= new Vector3(speed * Time.deltaTime, 0, 0);
+            MoveLeft();
         }
 
     }
 
+
+    public void MoveUp()
+    {
+        transform.position += new Vector3(0, speed * Time.deltaTime, 0);
+    }
+
+    public void MoveDown()
+    {
+        transform.position -= new Vector3(0, speed * Time.deltaTime, 0);
+    }
+
+    public void MoveRight()
+    {
+        transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
+    }
+    public void MoveLeft()
+    {
+        transform.position -= new Vector3(speed * Time.deltaTime, 0, 0);
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
-            Debug.Log("Player has touched " + collision.gameObject.name);
+        Debug.Log("Player has touched " + collision.gameObject.name);
     }
 }
