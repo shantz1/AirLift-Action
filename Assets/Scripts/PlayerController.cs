@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField]
     float speed = 10f;
+    public GameManager gameManager;
 
 
     void Start()
@@ -15,30 +16,34 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (!gameManager.gameOver)
         {
 
-            MoveUp();
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            MoveDown();
+            if (Input.GetKey(KeyCode.W))
+            {
+
+                MoveUp();
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                MoveDown();
 
 
-        }
+            }
 
 
-        if (Input.GetKey(KeyCode.D))
-        {
-            MoveRight();
+            if (Input.GetKey(KeyCode.D))
+            {
+                MoveRight();
 
 
-        }
+            }
 
-        if (Input.GetKey(KeyCode.A))
-        {
+            if (Input.GetKey(KeyCode.A))
+            {
 
-            MoveLeft();
+                MoveLeft();
+            }
         }
 
     }
@@ -65,6 +70,6 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Player has touched " + collision.gameObject.name);
+        // Debug.Log("Player has touched " + collision.gameObject.name);
     }
 }

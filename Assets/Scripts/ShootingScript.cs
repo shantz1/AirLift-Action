@@ -9,12 +9,11 @@ public class ShootingScript : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletSpeed = 10;
 
-    void FixedUpdate()
+    void Update()
     {
 
         if (Input.GetMouseButtonDown(0))
         {
-            
             var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
             bullet.GetComponent<Rigidbody>().velocity = -bulletSpawnPoint.up * bulletSpeed;
         }
