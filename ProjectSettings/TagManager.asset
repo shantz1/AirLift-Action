@@ -5,14 +5,18 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - EnemyTruck
+  - EnemyBike
+  - EnemyAPC
+  - ParaCommando
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - Enemy
   - 
   - 
   - 
