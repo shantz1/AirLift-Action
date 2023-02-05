@@ -6,14 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/AirLift_AssetPack/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
-  - enabled: 1
     path: Assets/AirLift_AssetPack/Scenes/MainMenu.unity
     guid: 170d09f3d7dece642808f7ae40222818
-  - enabled: 1
-    path: Assets/Scenes/Level.unity
-    guid: ff639e5af61946b459f20291e03c8fe5
   - enabled: 1
     path: Assets/AirLift_AssetPack/Scenes/MainLevel.unity
     guid: d84b42195432fcb4f84e8cfd7b7a089f
