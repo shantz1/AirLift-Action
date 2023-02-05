@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Enemy
   - Bullet
+  - EnemyBike
+  - EnemyTruck
+  - EnemyAPC
+  - EnemySoldier
   layers:
   - Default
   - TransparentFX
