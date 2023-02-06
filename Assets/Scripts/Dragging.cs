@@ -10,7 +10,7 @@ public class Dragging : MonoBehaviour
     private Transform toDrag;
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
 
         Vector3 v3;
@@ -31,7 +31,7 @@ public class Dragging : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider.tag == "Player")
+                if (hit.collider.CompareTag("PlayerCoptor"))
                 {
                     toDrag = hit.transform;
                     dist = hit.transform.position.x - Camera.main.transform.position.x;

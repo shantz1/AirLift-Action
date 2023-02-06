@@ -2428,7 +2428,7 @@ GameObject:
   - component: {fileID: 737734654}
   m_Layer: 0
   m_Name: Helicopter
-  m_TagString: Player
+  m_TagString: PlayerCoptor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2561,6 +2561,36 @@ PrefabInstance:
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1060085559244588848, guid: 6beab00e970c2154d9076290d9906e52,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060085559244588848, guid: 6beab00e970c2154d9076290d9906e52,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060085559244588848, guid: 6beab00e970c2154d9076290d9906e52,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060085559244588848, guid: 6beab00e970c2154d9076290d9906e52,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060085559244588848, guid: 6beab00e970c2154d9076290d9906e52,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 393
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060085559244588848, guid: 6beab00e970c2154d9076290d9906e52,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -112
+      objectReference: {fileID: 0}
     - target: {fileID: 2043549802105464696, guid: 6beab00e970c2154d9076290d9906e52,
         type: 3}
       propertyPath: m_Name
@@ -2627,6 +2657,36 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4785887132972445621, guid: 105007a6016638f4d9ad9a183e4b6a30,
         type: 3}
+    - target: {fileID: 5485893525716777858, guid: 6beab00e970c2154d9076290d9906e52,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -112.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485893525716777858, guid: 6beab00e970c2154d9076290d9906e52,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485893525716777858, guid: 6beab00e970c2154d9076290d9906e52,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485893525716777858, guid: 6beab00e970c2154d9076290d9906e52,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485893525716777858, guid: 6beab00e970c2154d9076290d9906e52,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485893525716777858, guid: 6beab00e970c2154d9076290d9906e52,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -155.59998
+      objectReference: {fileID: 0}
     - target: {fileID: 5485893526129573997, guid: 6beab00e970c2154d9076290d9906e52,
         type: 3}
       propertyPath: m_Sprite
@@ -10593,7 +10653,7 @@ GameObject:
   - component: {fileID: 7499487184300480998}
   m_Layer: 0
   m_Name: PlayerJeep
-  m_TagString: Player
+  m_TagString: PlayerJeep
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
