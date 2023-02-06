@@ -474,6 +474,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &2303390644763105306
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4191174077200765501}
+  m_Layer: 0
+  m_Name: Raypoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4191174077200765501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2303390644763105306}
+  m_LocalRotation: {x: 0.04636548, y: -0.0005369997, z: -0.0019994809, w: 0.9989224}
+  m_LocalPosition: {x: -0.0119, y: 0.0514, z: 0.4536}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5283012026986556374}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 5.315, y: -0.072000004, z: -0.23300001}
 --- !u!1 &2348254203322144308
 GameObject:
   m_ObjectHideFlags: 0
@@ -1990,9 +2020,10 @@ GameObject:
   - component: {fileID: 8863773669006486950}
   - component: {fileID: 1429650684112364625}
   - component: {fileID: -2279149124854994383}
+  - component: {fileID: 2847372368172540674}
   m_Layer: 0
   m_Name: BikeEnemy
-  m_TagString: EnemyBike
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2129,6 +2160,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &2847372368172540674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7737968843487038056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1baa2fdc803d98e41bc54ca6a7098494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 8372786025416033053, guid: e9b7351c299cbdf4a9e2ff8af347dcc2,
+    type: 3}
+  bulletSpawnPoint: {fileID: 4191174077200765501}
+  bulletSpeed: 1
+  bulletsPerSecond: 10
+  range: 25
+  shootingSound: {fileID: 0}
+  enemyTag: Player
+  rayStartPoint: {fileID: 4191174077200765501}
+  poolSize: 10
 --- !u!1 &7757697505707898234
 GameObject:
   m_ObjectHideFlags: 0
