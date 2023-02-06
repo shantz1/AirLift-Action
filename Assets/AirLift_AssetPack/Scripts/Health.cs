@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Health : MonoBehaviour
@@ -34,24 +35,44 @@ public class Health : MonoBehaviour
         {
             Die();
         }
+        if(currentHealth > maxHealth)
+        {
+            currentHealth= maxHealth;
+        }
     }
 
-    private void Die()
+    public void Die()
     {
-        // Trigger game over
+        SceneManager.LoadScene("MainLevel");
     }
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.tag == "Bullet")
+        if (collision.collider.tag == "Enemy")
         {
-            currentHealth = currentHealth-1;
+           // currentHealth--;
         }
+        if (collision.collider.CompareTag("Bullet"))
+        {
+           //
+        }
+
+
     }
 
-    
 
+    void OnTriggerEnter(Collider collider)
+    {
+        if (collider.tag == "Enemy")
+        {
+            currentHealth--;
+        }
+        if (collider.CompareTag("Bullet"))
+        {
+            currentHealth += 10;
+        }
 
+    }
 
 
 

@@ -88,7 +88,7 @@ public class GunScript : MonoBehaviour
         bullet.transform.rotation = bulletSpawnPoint.rotation;
         bulletPool.Enqueue(bullet);
 
-        // Play the shooting sound
+       
         shootingSound.Play();
     }
 
@@ -96,4 +96,6 @@ public class GunScript : MonoBehaviour
     {
         UpdateBulletFireRate();
     }
+
+   
 }

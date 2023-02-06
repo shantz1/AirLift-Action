@@ -13,17 +13,19 @@ public class HelicopterwithRigdbody : MonoBehaviour
     private Rigidbody rb;
     private float moveHorizontal;
     private float moveVertical;
+    public bool gameOver = false;
+    public Health health;
 
 
     //x movement
     private float Tilting;
-   
+
 
 
 
 
     private Quaternion targetRotation;
-        public float smooth = 5.0f;
+    public float smooth = 5.0f;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -31,29 +33,35 @@ public class HelicopterwithRigdbody : MonoBehaviour
 
     void FixedUpdate()
     {
-        moveHorizontal = Input.GetAxis("Horizontal");
-        moveVertical = Input.GetAxis("Vertical");
-        //movement in x axis.
-        Tilting = Input.GetAxis("TiltControl");
+        if (!gameOver)
+        {
+            moveHorizontal = Input.GetAxis("Horizontal");
+            moveVertical = 0;
+            //movement in x axis.
+            Tilting = Input.GetAxis("TiltControl");
 
 
-        Vector3 movement = new Vector3(Tilting, moveVertical,moveHorizontal );
-       // rb.velocity = Tilt * speed;
-        rb.velocity = movement * speed;
+            Vector3 movement = new Vector3(Tilting, moveVertical, moveHorizontal);
+            // rb.velocity = Tilt * speed;
+            rb.velocity = movement * speed;
 
-        // Pitch the helicopter based on Y axis movement
-        //transform.rotation = Quaternion.Euler(moveHorizontal * pitchAmount,0,0);
-        //
-        targetRotation = Quaternion.Euler(moveHorizontal * pitchAmount, 0, -moveVertical * pitchAmount);
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * smooth);
-        // Rotate the main rotor
-        mainRotor.transform.Rotate(0, 0, rotationSpeed);
-       // Rotate the tail rotor on its pivot point
-        tailRotor.transform.RotateAround(tailRotor.transform.position, tailRotor.transform.right, -rotationSpeed * 2);
+            // Pitch the helicopter based on Y axis movement
+            //transform.rotation = Quaternion.Euler(moveHorizontal * pitchAmount,0,0);
+            //
+            targetRotation = Quaternion.Euler(moveHorizontal * pitchAmount, 0, -moveVertical * pitchAmount);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * smooth);
+            // Rotate the main rotor
+            mainRotor.transform.Rotate(0, 0, rotationSpeed);
+            // Rotate the tail rotor on its pivot point
+            tailRotor.transform.RotateAround(tailRotor.transform.position, tailRotor.transform.right, -rotationSpeed * 2);
 
-       //get damage
+            //get damage
 
-       
+        }
+        else
+        {
+            health.Die();
+        }
 
 
 
