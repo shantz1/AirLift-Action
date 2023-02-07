@@ -35,9 +35,9 @@ public class Bullet : MonoBehaviour
     {
         if (collider.tag == "Enemy")
         {
-            Destroy(collider.gameObject);
+            Hide();
         }
-       
+
 
     }
 

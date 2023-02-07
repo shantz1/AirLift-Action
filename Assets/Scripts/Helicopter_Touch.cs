@@ -32,27 +32,22 @@ public class Helicopter_Touch : MonoBehaviour
 
     void FixedUpdate()
     {
-        moveHorizontal =joystick.Direction.x;
-        moveVertical = joystick.Direction.y;
-        //movement in x axis.
-        Tilting = Input.GetAxis("TiltControl");
+        moveHorizontal = joystick.Direction.x;
+   
+        Tilting = joystick.Direction.y;
+        
 
-
-        Vector3 movement = new Vector3(Tilting, moveVertical, moveHorizontal);
-        // rb.velocity = Tilt * speed;
+        Vector3 movement = new Vector3(-Tilting, 0, moveHorizontal);
+      
         rb.velocity = movement * speed;
 
-        // Pitch the helicopter based on Y axis movement
-        //transform.rotation = Quaternion.Euler(moveHorizontal * pitchAmount,0,0);
-        //
-        targetRotation = Quaternion.Euler(moveHorizontal * pitchAmount, 0, -moveVertical * pitchAmount);
+     
+        targetRotation = Quaternion.Euler(moveHorizontal * pitchAmount, 0, Tilting * pitchAmount);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * smooth);
         // Rotate the main rotor
         mainRotor.transform.Rotate(0, 0, rotationSpeed);
         // Rotate the tail rotor on its pivot point
         tailRotor.transform.RotateAround(tailRotor.transform.position, tailRotor.transform.right, -rotationSpeed * 2);
-
-        //get damage
 
 
 

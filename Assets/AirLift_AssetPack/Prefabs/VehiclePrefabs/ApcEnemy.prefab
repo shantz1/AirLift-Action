@@ -3226,7 +3226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28ade79a57b69f64dbdde8071444a505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 8372786025416033053, guid: e9b7351c299cbdf4a9e2ff8af347dcc2,
+  bulletPrefab: {fileID: 8372786025416033053, guid: 38340bf5e75dc144fa963f6f0bf64344,
     type: 3}
   bulletSpawnPoint: {fileID: 4548712732317468867}
   bulletSpeed: 1
@@ -3251,7 +3251,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &-218826456112056024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3261,11 +3261,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5964883597986799207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fd695f4a3542cd48bdeabcf7667a44f, type: 3}
+  m_Script: {fileID: 11500000, guid: 526231ae3c5fd754dbf9b93731fa1e21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 80
+  maxHealth: 50
   healthBarUI: {fileID: 1856937860497899026}
   healthSlider: {fileID: 8586104219756678035}
 --- !u!1 &6142470583531995879

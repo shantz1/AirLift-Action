@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TruckHealth : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
     public float health;
     public float maxHealth = 50f;
@@ -34,7 +34,7 @@ public class TruckHealth : MonoBehaviour
         {
             DestroyTruck();
         }
-        if(health > maxHealth)
+        if (health > maxHealth)
         {
             health = maxHealth;
         }
@@ -47,16 +47,20 @@ public class TruckHealth : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.tag == "Bullet")
-        {
-            health--;
-        }
+
         if (collision.gameObject.CompareTag("PlayerJeep"))
         {
             health--;
         }
     }
 
+    public void OnTriggerEnter(Collider collider)
+    {
+        if (collider.tag == "Bullet")
+        {
+            health--;
+        }
+    }
 }
 
 

@@ -50,33 +50,18 @@ public class Health : MonoBehaviour
     {
         if (collision.collider.tag == "Enemy")
         {
-           // currentHealth--;
+            currentHealth--;
         }
-        if (collision.collider.CompareTag("Bullet"))
-        {
-           //
-        }
-
-
+      
     }
 
 
     void OnTriggerEnter(Collider collider)
     {
-        if (collider.tag == "Enemy")
+        if (collider.tag == "EnemyBullet")
         {
             currentHealth--;
         }
-        if (collider.CompareTag("Bullet"))
-        {
-            currentHealth += 10;
-        }
-
     }
 
-
-
-
 }
-    
-

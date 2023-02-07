@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Enemy
   - Bullet
+  - PlayerCoptor
+  - PlayerJeep
+  - EnemySoldier
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX

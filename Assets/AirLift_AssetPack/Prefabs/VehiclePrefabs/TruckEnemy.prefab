@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 5041592213824635447}
   - component: {fileID: 8257863295642548489}
   - component: {fileID: 3068648651798190615}
-  - component: {fileID: 6154479846362704116}
   - component: {fileID: 8523853376063032211}
   m_Layer: 0
   m_Name: TruckEnemy
@@ -139,20 +138,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &6154479846362704116
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68793402160682178}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.6, y: 2.32, z: 1}
-  m_Center: {x: 0, y: 0.94, z: -2.77}
+  m_CollisionDetection: 1
 --- !u!114 &8523853376063032211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 50
+  maxHealth: 30
   healthBarUI: {fileID: 4129674137648024860}
   healthSlider: {fileID: 4849244580626347070}
 --- !u!1 &110439755257916458
@@ -2966,6 +2952,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCharacter 1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6898616479211100312, guid: d61542897ec8021409520b91101f5897,
+        type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 8372786025416033053, guid: 38340bf5e75dc144fa963f6f0bf64344,
+        type: 3}
     - target: {fileID: 9030284795535112049, guid: d61542897ec8021409520b91101f5897,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3101,6 +3093,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCharacter 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6898616479211100312, guid: d61542897ec8021409520b91101f5897,
+        type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 8372786025416033053, guid: 38340bf5e75dc144fa963f6f0bf64344,
+        type: 3}
     - target: {fileID: 9030284795535112049, guid: d61542897ec8021409520b91101f5897,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3236,6 +3234,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCharacter 1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6898616479211100312, guid: d61542897ec8021409520b91101f5897,
+        type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 8372786025416033053, guid: 38340bf5e75dc144fa963f6f0bf64344,
+        type: 3}
     - target: {fileID: 9030284795535112049, guid: d61542897ec8021409520b91101f5897,
         type: 3}
       propertyPath: m_LocalPosition.x
