@@ -369,7 +369,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 135859737}
   m_LocalRotation: {x: -0.12278779, y: 0.6963643, z: -0.12278779, w: 0.6963643}
-  m_LocalPosition: {x: 34, y: -3.4927657, z: 34.260773}
+  m_LocalPosition: {x: 60.7, y: -3.4927657, z: 34.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 174537737}
@@ -1076,29 +1076,23 @@ MonoBehaviour:
       enemyCount: 3
     - enemyType: {fileID: 68793402160682178, guid: 5dcf23b7aec79764d8bb8ba9c2f4177f,
         type: 3}
-      enemyCount: 3
-    - enemyType: {fileID: 68793402160682178, guid: 5dcf23b7aec79764d8bb8ba9c2f4177f,
-        type: 3}
-      enemyCount: 3
+      enemyCount: 2
   - waveName: wave2
     waveEnemies:
-    - enemyType: {fileID: 7737968843487038056, guid: fc147a099e6b4f9499f5f733da8f4547,
-        type: 3}
-      enemyCount: 2
     - enemyType: {fileID: 68793402160682178, guid: 5dcf23b7aec79764d8bb8ba9c2f4177f,
         type: 3}
-      enemyCount: 3
+      enemyCount: 2
+    - enemyType: {fileID: 7737968843487038056, guid: fc147a099e6b4f9499f5f733da8f4547,
+        type: 3}
+      enemyCount: 5
   - waveName: wave3
     waveEnemies:
-    - enemyType: {fileID: 7737968843487038056, guid: fc147a099e6b4f9499f5f733da8f4547,
-        type: 3}
-      enemyCount: 2
     - enemyType: {fileID: 68793402160682178, guid: 5dcf23b7aec79764d8bb8ba9c2f4177f,
         type: 3}
-      enemyCount: 3
+      enemyCount: 5
     - enemyType: {fileID: 5964883597986799207, guid: 2211f25a11bd8a94d80efc455160a264,
         type: 3}
-      enemyCount: 2
+      enemyCount: 3
   spawnPoints:
   - {fileID: 1559444927}
   - {fileID: 1536017772}
@@ -4552,7 +4546,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536017771}
   m_LocalRotation: {x: -0.12278779, y: 0.6963643, z: -0.12278779, w: 0.6963643}
-  m_LocalPosition: {x: 34, y: -1.0986245, z: 40.838627}
+  m_LocalPosition: {x: 52, y: -1.0986245, z: 40.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 174537737}

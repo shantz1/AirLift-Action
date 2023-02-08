@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class Bullet : MonoBehaviour
+public class EnemyBullet : MonoBehaviour
 {
 
     public float BulletSpeed = 20f;
@@ -33,7 +33,7 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
-        if (collider.CompareTag("Enemy"))
+        if (collider.CompareTag("PlayerJeep"))
         {
             Hide();
         }
