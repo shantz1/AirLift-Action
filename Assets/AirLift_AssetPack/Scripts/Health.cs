@@ -55,6 +55,7 @@ public class Health : MonoBehaviour
       
     }
 
+  
 
     void OnTriggerEnter(Collider collider)
     {
@@ -64,4 +65,9 @@ public class Health : MonoBehaviour
         }
     }
 
+
+    public void HealthIncrease()
+    {
+        currentHealth += 10;
+    }
 }

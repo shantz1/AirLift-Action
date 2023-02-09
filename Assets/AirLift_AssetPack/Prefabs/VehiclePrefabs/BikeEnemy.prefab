@@ -2586,7 +2586,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 4191174077200765501}
   bulletSpeed: 1
   bulletsPerSecond: 10
-  range: 25
+  range: 20
   shootingSound: {fileID: 7789605739060521131}
   enemyTag: Player
   rayStartPoint: {fileID: 4191174077200765501}
