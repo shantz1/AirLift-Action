@@ -88,7 +88,7 @@ public class GunScript : MonoBehaviour
         bullet.transform.rotation = bulletSpawnPoint.rotation;
         bulletPool.Enqueue(bullet);
 
-       
+        shootingSound.pitch = UnityEngine.Random.Range(1f, 1.2f);
         shootingSound.Play();
     }
 
@@ -97,5 +97,5 @@ public class GunScript : MonoBehaviour
         UpdateBulletFireRate();
     }
 
-   
+
 }
