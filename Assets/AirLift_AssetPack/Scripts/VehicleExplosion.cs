@@ -28,16 +28,13 @@ public class VehicleExplosion : MonoBehaviour
         {
             Explode();
         }
-        
-        if(isExploded)
+
+        if (isExploded)
 
         {
-           Destroy(gameObject,0.5f);//destroy the entire object
-           
+            Destroy(gameObject, 0.5f);//destroy the entire object
+
         }
-        
-        
-        
     }
 
     public void Explode()
@@ -56,9 +53,7 @@ public class VehicleExplosion : MonoBehaviour
             Instantiate(explosionParticles, transform.position, Quaternion.identity);
             startTime = Time.time;
             isExploded = true;
-            
+
         }
     }
-
-   
 }

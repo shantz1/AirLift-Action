@@ -22,7 +22,7 @@ public class EnemySpawning : MonoBehaviour
     public Transform[] spawnPoints;
 
     public float timeBetweenWaves = 5f;
-    public float timeBetweenEnemies = 1f;
+    public float timeBetweenEnemies = 5f;
 
     private int waveIndex = 0;
 

@@ -8,12 +8,12 @@ public class EnemyHealth : MonoBehaviour
     public float health;
     public GameObject game_Object;
     public float maxHealth = 50f;
-    
+    public GameObject healthBarUI;
     public Slider healthSlider;
     private VehicleExplosion explosion;
     public bool dead = false;
-    
-    
+
+
 
 
     private void Awake()
@@ -23,7 +23,7 @@ public class EnemyHealth : MonoBehaviour
         dead = false;
     }
 
-  
+
 
 
 
@@ -44,12 +44,12 @@ public class EnemyHealth : MonoBehaviour
         if (health <= 0)
         {
             dead = true;
-         
-               
+
+
         }
-        
-        
-        
+
+
+
         if (health > maxHealth)
         {
             health = maxHealth;
@@ -74,8 +74,6 @@ public class EnemyHealth : MonoBehaviour
             health--;
         }
     }
-
-   
 }
 
 

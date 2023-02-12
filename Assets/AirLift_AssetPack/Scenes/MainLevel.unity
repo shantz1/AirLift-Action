@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 3513113c9d237da4ea30b17fc1a078b1,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -728,6 +728,7 @@ Transform:
   - {fileID: 1536017772}
   - {fileID: 135859738}
   - {fileID: 527749056}
+  - {fileID: 894469070}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 20, y: -90, z: 0}
@@ -826,7 +827,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 176856958}
   bulletSpeed: 1
   bulletsPerSecond: 10
-  range: 20
+  range: 25
   shootingSound: {fileID: 176856960}
   enemyTag: Enemy
   rayStartPoint: {fileID: 176856958}
@@ -1075,7 +1076,7 @@ MonoBehaviour:
     waveEnemies:
     - enemyType: {fileID: 7737968843487038056, guid: fc147a099e6b4f9499f5f733da8f4547,
         type: 3}
-      enemyCount: 3
+      enemyCount: 2
     - enemyType: {fileID: 68793402160682178, guid: 5dcf23b7aec79764d8bb8ba9c2f4177f,
         type: 3}
       enemyCount: 2
@@ -2781,6 +2782,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -112
       objectReference: {fileID: 0}
+    - target: {fileID: 1955197155736650538, guid: 6beab00e970c2154d9076290d9906e52,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955197155736650538, guid: 6beab00e970c2154d9076290d9906e52,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 306
+      objectReference: {fileID: 0}
     - target: {fileID: 2043549802105464696, guid: 6beab00e970c2154d9076290d9906e52,
         type: 3}
       propertyPath: m_Name
@@ -2824,7 +2835,7 @@ PrefabInstance:
     - target: {fileID: 5027854005234968058, guid: 6beab00e970c2154d9076290d9906e52,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5027854005234968058, guid: 6beab00e970c2154d9076290d9906e52,
         type: 3}
@@ -3345,6 +3356,67 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853011703}
   m_Mesh: {fileID: -3192407847068387414, guid: f95727bc8fb982144ba171bc93c85487, type: 3}
+--- !u!1 &894469069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 894469070}
+  - component: {fileID: 894469071}
+  - component: {fileID: 894469072}
+  m_Layer: 0
+  m_Name: MedkitSpawner
+  m_TagString: Medikit
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &894469070
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894469069}
+  m_LocalRotation: {x: -0.12278779, y: 0.6963643, z: -0.12278779, w: 0.6963643}
+  m_LocalPosition: {x: 78.5, y: -5.09, z: 48.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 174537737}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &894469071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894469069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8edc92a77827894c828acb0c70575b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerhealth: {fileID: 7499487184300481002}
+  Medkit: {fileID: 2923106870011949032, guid: 7bb7769eb70feba4daf7c13ad3b35be6, type: 3}
+  spawnInterval: 20
+  spawnDistance: 30
+--- !u!65 &894469072
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894469069}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &958405978
 GameObject:
   m_ObjectHideFlags: 0
@@ -3673,7 +3745,7 @@ Transform:
   m_LocalScale: {x: 7.02945, y: 5.873401, z: 1.9654}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1098520278
 GameObject:
@@ -7729,7 +7801,7 @@ LineRenderer:
     shadowBias: 0.5
     generateLightingData: 0
   m_UseWorldSpace: 1
-  m_Loop: 0
+  m_Loop: 1
 --- !u!1 &2091120081
 GameObject:
   m_ObjectHideFlags: 0
@@ -8326,7 +8398,6 @@ GameObject:
   - component: {fileID: 62708463780234921}
   - component: {fileID: 1044226303567892704}
   - component: {fileID: 1800788037275145838}
-  - component: {fileID: 937501579894528851}
   m_Layer: 0
   m_Name: WheelRR
   m_TagString: Player
@@ -8334,19 +8405,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!135 &937501579894528851
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 937501579894528850}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.004210244
-  m_Center: {x: -0.00005855848, y: -2.3283064e-10, z: 0.0000000023283064}
 --- !u!33 &993564975465778859
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9333,7 +9391,6 @@ GameObject:
   - component: {fileID: 3990098789903125359}
   - component: {fileID: 5762341769083152933}
   - component: {fileID: 1392193323382108983}
-  - component: {fileID: 3347256587271761203}
   m_Layer: 0
   m_Name: WheelFL
   m_TagString: Player
@@ -9341,19 +9398,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!135 &3347256587271761203
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3347256587271761202}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.0042102435
-  m_Center: {x: -0.00005855842, y: 4.656612e-10, z: -2.328306e-10}
 --- !u!1 &3461691440999063361
 GameObject:
   m_ObjectHideFlags: 0
@@ -9980,7 +10024,6 @@ GameObject:
   - component: {fileID: 2378901745468627676}
   - component: {fileID: 7003115454049780162}
   - component: {fileID: 4322266785472488661}
-  - component: {fileID: 4227453771352036260}
   m_Layer: 0
   m_Name: WheelFR
   m_TagString: Player
@@ -9988,19 +10031,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!135 &4227453771352036260
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4227453771352036259}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.0042102435
-  m_Center: {x: 0.00005856622, y: 4.656612e-10, z: 2.328307e-10}
 --- !u!1 &4242829928364773101
 GameObject:
   m_ObjectHideFlags: 0
@@ -11138,7 +11168,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7499487184300480996}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.2670898, y: -9.31, z: -17.22}
+  m_LocalPosition: {x: -2.2670898, y: -9.21, z: -17.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1832806152}
@@ -11185,7 +11215,6 @@ GameObject:
   - component: {fileID: 4521166352221116734}
   - component: {fileID: 288757070466372495}
   - component: {fileID: 8590126724616116090}
-  - component: {fileID: 6828526609210450946}
   m_Layer: 0
   m_Name: WheelRL
   m_TagString: Player
@@ -11193,19 +11222,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!135 &6828526609210450946
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6828526609210450945}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.004210243
-  m_Center: {x: -0.000058558595, y: 4.6566118e-10, z: -2.328306e-10}
 --- !u!4 &6935407585872546456
 Transform:
   m_ObjectHideFlags: 0
@@ -11601,6 +11617,8 @@ GameObject:
   - component: {fileID: 7499487184300481001}
   - component: {fileID: 7499487184300481002}
   - component: {fileID: 7499487184300480998}
+  - component: {fileID: 7499487184300481004}
+  - component: {fileID: 7499487184300481003}
   m_Layer: 0
   m_Name: PlayerJeep
   m_TagString: PlayerJeep
@@ -11742,12 +11760,12 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7499487184300480996}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: aebc82df06479fc4d9846ae74e1733de, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.93243694, y: 1.3736176, z: 4.2382727}
-  m_Center: {x: -0.15786314, y: 1.275379, z: -0.13641071}
+  m_Size: {x: 2.147294, y: 1.3945246, z: 4.2382727}
+  m_Center: {x: -0.16101027, y: 0.8036511, z: -0.13641071}
 --- !u!65 &7499487184300481001
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11755,12 +11773,12 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7499487184300480996}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: aebc82df06479fc4d9846ae74e1733de, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.9, y: 2.41, z: 3.08}
-  m_Center: {x: -0.14, y: 1.89, z: 0}
+  m_Size: {x: 1.8802748, y: 1.285522, z: 2.899109}
+  m_Center: {x: -0.19035673, y: 2.144723, z: -0.7868786}
 --- !u!114 &7499487184300481002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11776,6 +11794,32 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthSlider: {fileID: 119049326}
+--- !u!135 &7499487184300481003
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7499487184300480996}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.44069958
+  m_Center: {x: -0.17217875, y: 0.4503131, z: 1.3716993}
+--- !u!135 &7499487184300481004
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7499487184300480996}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.4470229
+  m_Center: {x: -0.17217875, y: 0.4503131, z: -1.1390285}
 --- !u!1 &7532088543370028869
 GameObject:
   m_ObjectHideFlags: 0

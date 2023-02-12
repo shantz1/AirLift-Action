@@ -47,8 +47,8 @@ GameObject:
   - component: {fileID: 4650746259143011610}
   - component: {fileID: 3068648651798190615}
   - component: {fileID: 4554417652334669596}
-  - component: {fileID: 7651079900691163763}
-  - component: {fileID: 8811549725857309021}
+  - component: {fileID: 4379510358622849143}
+  - component: {fileID: 5096534252973582152}
   m_Layer: 0
   m_Name: TruckEnemy
   m_TagString: Enemy
@@ -184,7 +184,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 96
   m_CollisionDetection: 1
 --- !u!82 &4554417652334669596
 AudioSource:
@@ -283,7 +283,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &7651079900691163763
+--- !u!114 &4379510358622849143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68793402160682178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5a3df8c0f7a8f4ab17252c1fca1128, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  game_Object: {fileID: 0}
+  maxHealth: 10
+  healthBarUI: {fileID: 4129674137648024860}
+  healthSlider: {fileID: 4849244580626347070}
+  dead: 0
+--- !u!114 &5096534252973582152
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -299,58 +317,11 @@ MonoBehaviour:
   - {fileID: 8357336394063486133}
   - {fileID: 7482769811964484900}
   - {fileID: 3680897677891473131}
-  - {fileID: 110439755257916458}
-  - {fileID: 3680897677891473131}
-  - {fileID: 8807989528828891396}
-  - {fileID: 2579209414483944718}
-  - {fileID: 2379814375659410713}
-  - {fileID: 8329599986737048193}
-  - {fileID: 2411154237297787096}
-  - {fileID: 6494214538533408964}
-  - {fileID: 6200023073040319195}
-  - {fileID: 574892901413378634}
-  - {fileID: 801016459746443414}
-  - {fileID: 5769597036826063066}
-  - {fileID: 8544781503139661362}
-  - {fileID: 5607539100031115853}
-  - {fileID: 149133035491077872}
-  - {fileID: 8807728470629209037}
-  - {fileID: 4298121863556493150}
-  - {fileID: 1393410414725167970}
-  - {fileID: 6232880984646332242}
-  - {fileID: 4010848304264755516}
-  - {fileID: 1487570373512881345}
-  - {fileID: 5669500328998897638}
-  - {fileID: 5358013462191239956}
-  - {fileID: 2334617617133830337}
-  - {fileID: 1476782820649214197}
-  - {fileID: 1840830311168331921}
-  - {fileID: 7581202432916094645}
-  - {fileID: 693179669270337552}
-  - {fileID: 2313961852825847584}
-  - {fileID: 5677172054972667336}
   explosionParticles: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
     type: 3}
   explosionForce: 1000
   explosionRadius: 10
   shrinkDuration: 2
---- !u!114 &8811549725857309021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68793402160682178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd5a3df8c0f7a8f4ab17252c1fca1128, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  game_Object: {fileID: 0}
-  maxHealth: 20
-  healthSlider: {fileID: 4849244580626347070}
-  dead: 0
 --- !u!1 &110439755257916458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1267,7 +1238,7 @@ Animator:
   m_GameObject: {fileID: 693179669270337552}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 6b7de830779bd9e468c9b4abe684a562, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 515a51e29f44e2e4d96a2bbe9cd545e2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -3605,7 +3576,7 @@ Animator:
   m_GameObject: {fileID: 2313961852825847584}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 6b7de830779bd9e468c9b4abe684a562, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 515a51e29f44e2e4d96a2bbe9cd545e2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -7591,7 +7562,7 @@ Animator:
   m_GameObject: {fileID: 5677172054972667336}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 6b7de830779bd9e468c9b4abe684a562, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 515a51e29f44e2e4d96a2bbe9cd545e2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -10522,7 +10493,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

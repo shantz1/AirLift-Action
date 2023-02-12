@@ -595,7 +595,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6983,8 +6983,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  game_Object: {fileID: 7737968843487038056}
+  game_Object: {fileID: 0}
   maxHealth: 10
+  healthBarUI: {fileID: 6440772032436004022}
   healthSlider: {fileID: 1424470883893773830}
   dead: 0
 --- !u!65 &6593123219818414382
