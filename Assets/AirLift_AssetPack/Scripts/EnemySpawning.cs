@@ -15,34 +15,35 @@ public class Wave
     public string waveName;
     public WaveEnemy[] waveEnemies;
 }
-
 public class EnemySpawning : MonoBehaviour
 {
     public Wave[] waves;
     public Transform[] spawnPoints;
 
     public float timeBetweenWaves = 5f;
-    public float timeBetweenEnemies = 5f;
+    public float timeBetweenEnemies = 1f;
 
     private int waveIndex = 0;
 
     private void Start()
     {
-        InvokeRepeating("SpawnWave", 0f, timeBetweenWaves);
+        StartCoroutine(SpawnWaves());
     }
 
-    void SpawnWave()
+    IEnumerator SpawnWaves()
     {
-        if (waveIndex == waves.Length)
+        while (true)
         {
-            // all waves have been completed
-            CancelInvoke("SpawnWave");
-            return;
-        }
+            if (waveIndex == waves.Length)
+            {
+                waveIndex = 0; // cycle back to the first wave
+            }
 
-        // spawn the current wave with time intervals between each enemy
-        StartCoroutine(SpawnEnemies(waveIndex));
-        waveIndex++;
+            // spawn the current wave with time intervals between each enemy
+            yield return StartCoroutine(SpawnEnemies(waveIndex));
+            waveIndex++;
+            yield return new WaitForSeconds(timeBetweenWaves);
+        }
     }
 
     IEnumerator SpawnEnemies(int waveIndex)

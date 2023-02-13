@@ -3217,6 +3217,7 @@ GameObject:
   - component: {fileID: -1713962146711144843}
   - component: {fileID: 5700874564514632140}
   - component: {fileID: 7321095446343094371}
+  - component: {fileID: 7128198893092056531}
   m_Layer: 0
   m_Name: ApcEnemy
   m_TagString: Enemy
@@ -3397,7 +3398,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5964883597986799207}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1baa2fdc803d98e41bc54ca6a7098494, type: 3}
   m_Name: 
@@ -3509,6 +3510,29 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7128198893092056531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5964883597986799207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcadae49e88e764a992bb41b8d67f7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 3652054568892751030}
+  bulletPrefab: {fileID: 8372786025416033053, guid: 38340bf5e75dc144fa963f6f0bf64344,
+    type: 3}
+  sphereCastRadius: 2
+  attackDelay: 3
+  fireRateMin: 5
+  fireRateMax: 6
+  numberOfBulletsMin: 3
+  numberOfBulletsMax: 5
+  bulletSpawnTimeMin: 0.1
+  bulletSpawnTimeMax: 0.5
 --- !u!1 &6142470583531995879
 GameObject:
   m_ObjectHideFlags: 0

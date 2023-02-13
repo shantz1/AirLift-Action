@@ -16,7 +16,7 @@ public class Health : MonoBehaviour
     
     private void Awake()
     {
-        currentHealth =50;
+        currentHealth =100;
     }
 
     public void Update()
@@ -54,11 +54,7 @@ public class Health : MonoBehaviour
         {
             currentHealth--;
         }
-        if (collision.collider.tag == "Medikit" )
-        {
-            Debug.Log("Medkit Recieved in health script");
-            currentHealth = maxHealth;
-        }
+      
 
     }
 
@@ -69,6 +65,11 @@ public class Health : MonoBehaviour
         if (collider.tag == "EnemyBullet")
         {
             currentHealth--;
+        }
+        if (collider.tag == "Medikit")
+        {
+            Debug.Log("Medkit Recieved in health script");
+            currentHealth = maxHealth;
         }
     }
 

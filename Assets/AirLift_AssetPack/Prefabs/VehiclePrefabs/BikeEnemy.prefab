@@ -4122,6 +4122,7 @@ GameObject:
   - component: {fileID: 1065654163775381220}
   - component: {fileID: 1975185958182858873}
   - component: {fileID: 6705708090051072313}
+  - component: {fileID: 8549420508870948309}
   m_Layer: 0
   m_Name: WheelBack
   m_TagString: Untagged
@@ -4136,13 +4137,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5289454286559684716}
-  m_LocalRotation: {x: 0.000000015454312, y: 0.7071067, z: -0.000000015454308, w: 0.7071068}
+  m_LocalRotation: {x: -0.68444455, y: -0.17758296, z: -0.68444455, w: -0.17758295}
   m_LocalPosition: {x: 0.0621477, y: 0.34840274, z: -0.6539516}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 6717559140790777979}
   m_RootOrder: 29
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: -209.09}
 --- !u!33 &1975185958182858873
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4190,6 +4191,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8549420508870948309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5289454286559684716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512b930df831be943a90fbd8ecfa2df3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 200
 --- !u!1 &5292145048794517835
 GameObject:
   m_ObjectHideFlags: 0
@@ -6043,6 +6057,7 @@ GameObject:
   - component: {fileID: 8160808501079590893}
   - component: {fileID: 3216188814721558591}
   - component: {fileID: 2934060849750670368}
+  - component: {fileID: 1376694193240116416}
   m_Layer: 0
   m_Name: wheelFront
   m_TagString: Untagged
@@ -6111,6 +6126,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1376694193240116416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064972516444833824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512b930df831be943a90fbd8ecfa2df3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 200
 --- !u!1 &7176464256505176448
 GameObject:
   m_ObjectHideFlags: 0
@@ -6764,6 +6792,7 @@ GameObject:
   - component: {fileID: 6593123219818414382}
   - component: {fileID: 681647013860686253}
   - component: {fileID: 2932976206370639367}
+  - component: {fileID: 6906034425885040755}
   m_Layer: 0
   m_Name: BikeEnemy
   m_TagString: Enemy
@@ -6858,7 +6887,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7737968843487038056}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1baa2fdc803d98e41bc54ca6a7098494, type: 3}
   m_Name: 
@@ -7150,6 +7179,29 @@ MonoBehaviour:
   explosionForce: 1000
   explosionRadius: 10
   shrinkDuration: 2
+--- !u!114 &6906034425885040755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7737968843487038056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcadae49e88e764a992bb41b8d67f7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 1808061018142139522}
+  bulletPrefab: {fileID: 8372786025416033053, guid: 38340bf5e75dc144fa963f6f0bf64344,
+    type: 3}
+  sphereCastRadius: 5
+  attackDelay: 2
+  fireRateMin: 5
+  fireRateMax: 6
+  numberOfBulletsMin: 3
+  numberOfBulletsMax: 5
+  bulletSpawnTimeMin: 0.1
+  bulletSpawnTimeMax: 0.5
 --- !u!1 &7747109506052425669
 GameObject:
   m_ObjectHideFlags: 0

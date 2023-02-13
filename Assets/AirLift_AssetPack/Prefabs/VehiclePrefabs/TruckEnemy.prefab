@@ -1190,6 +1190,7 @@ GameObject:
   - component: {fileID: 8706958100474708885}
   - component: {fileID: 2101837328292300266}
   - component: {fileID: 9158805436053256166}
+  - component: {fileID: 1964528846392691622}
   m_Layer: 0
   m_Name: EnemyCharacter 1
   m_TagString: EnemySoldier
@@ -1270,7 +1271,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 693179669270337552}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28ade79a57b69f64dbdde8071444a505, type: 3}
   m_Name: 
@@ -1382,6 +1383,29 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1964528846392691622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693179669270337552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcadae49e88e764a992bb41b8d67f7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 4630474697558953858}
+  bulletPrefab: {fileID: 8372786025416033053, guid: 38340bf5e75dc144fa963f6f0bf64344,
+    type: 3}
+  sphereCastRadius: 5
+  attackDelay: 2
+  fireRateMin: 5
+  fireRateMax: 6
+  numberOfBulletsMin: 3
+  numberOfBulletsMax: 5
+  bulletSpawnTimeMin: 0.1
+  bulletSpawnTimeMax: 0.5
 --- !u!1 &698756193280521589
 GameObject:
   m_ObjectHideFlags: 0
@@ -1551,13 +1575,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 873113632139865327}
-  m_LocalRotation: {x: -0.061426118, y: 0.21636847, z: -0.027050206, w: 0.974002}
+  m_LocalRotation: {x: -0.1150814, y: 0.10482872, z: 0.024050867, w: 0.98751646}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8268393769153857062}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: -6.1970005, y: 25.297, z: -4.5740004}
+  m_LocalEulerAnglesHint: {x: -13.434001, y: 11.957001, z: 1.3770001}
 --- !u!1 &917815588721956231
 GameObject:
   m_ObjectHideFlags: 0
@@ -3528,6 +3552,7 @@ GameObject:
   - component: {fileID: 5861196826868030629}
   - component: {fileID: 3794646474178435802}
   - component: {fileID: 7001002049554315546}
+  - component: {fileID: 5461035336000489978}
   m_Layer: 0
   m_Name: EnemyCharacter 1 (1)
   m_TagString: EnemySoldier
@@ -3608,7 +3633,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2313961852825847584}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28ade79a57b69f64dbdde8071444a505, type: 3}
   m_Name: 
@@ -3720,6 +3745,29 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5461035336000489978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2313961852825847584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcadae49e88e764a992bb41b8d67f7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 7620287396125561010}
+  bulletPrefab: {fileID: 8372786025416033053, guid: 38340bf5e75dc144fa963f6f0bf64344,
+    type: 3}
+  sphereCastRadius: 5
+  attackDelay: 2
+  fireRateMin: 5
+  fireRateMax: 6
+  numberOfBulletsMin: 3
+  numberOfBulletsMax: 5
+  bulletSpawnTimeMin: 0.1
+  bulletSpawnTimeMax: 0.5
 --- !u!1 &2334617617133830337
 GameObject:
   m_ObjectHideFlags: 0
@@ -4336,13 +4384,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2711060391519302623}
-  m_LocalRotation: {x: -0.001644015, y: 0.08058598, z: 0.06488581, w: 0.9946321}
+  m_LocalRotation: {x: -0.008282316, y: 0.06820036, z: 0.07258197, w: 0.9949935}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6574498323093575958}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: -0.78700006, y: 9.213, z: 7.4020004}
+  m_LocalEulerAnglesHint: {x: -1.5120001, y: 7.7330003, z: 8.242001}
 --- !u!1 &2854403093013693000
 GameObject:
   m_ObjectHideFlags: 0
@@ -7514,6 +7562,7 @@ GameObject:
   - component: {fileID: 4576398953335705165}
   - component: {fileID: 6520314170448988210}
   - component: {fileID: 944210355199860918}
+  - component: {fileID: 3250526691276039189}
   m_Layer: 0
   m_Name: EnemyCharacter 1 (2)
   m_TagString: EnemySoldier
@@ -7594,7 +7643,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5677172054972667336}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28ade79a57b69f64dbdde8071444a505, type: 3}
   m_Name: 
@@ -7706,6 +7755,29 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3250526691276039189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5677172054972667336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcadae49e88e764a992bb41b8d67f7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 510374534518768218}
+  bulletPrefab: {fileID: 8372786025416033053, guid: 38340bf5e75dc144fa963f6f0bf64344,
+    type: 3}
+  sphereCastRadius: 5
+  attackDelay: 2
+  fireRateMin: 5
+  fireRateMax: 6
+  numberOfBulletsMin: 3
+  numberOfBulletsMax: 5
+  bulletSpawnTimeMin: 0.1
+  bulletSpawnTimeMax: 0.5
 --- !u!1 &5685106051064330413
 GameObject:
   m_ObjectHideFlags: 0
@@ -9538,13 +9610,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7118055573805448711}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.004706917, y: 0.01004916, z: -0.006644186, w: 0.99991643}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2047653212284966094}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.54700005, y: 1.148, z: -0.75600004}
 --- !u!1 &7203610511830368456
 GameObject:
   m_ObjectHideFlags: 0
