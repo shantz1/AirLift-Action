@@ -9,6 +9,8 @@ public class Health : MonoBehaviour
     public float maxHealth = 100f;
     public float currentHealth;
     public Slider healthSlider;
+    public bool gameOver = false;
+    public GameObject gameOverUI;
    
    
     
@@ -43,7 +45,7 @@ public class Health : MonoBehaviour
 
     public void Die()
     {
-        SceneManager.LoadScene("MainLevel");
+        gameOver= true;
     }
 
     public void OnCollisionEnter(Collision collision)

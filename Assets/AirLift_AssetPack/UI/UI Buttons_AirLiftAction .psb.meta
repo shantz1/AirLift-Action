@@ -248,7 +248,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 670
-      y: 2088
+      y: 2356
       width: 401
       height: 295
     spriteID: f824e1ae88fc2494db27ed905c481057
@@ -261,7 +261,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -2490, y: -1164}
+    uvTransform: {x: -2490, y: -896}
   - name: Layer 1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -292,7 +292,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 670
-      y: 1284
+      y: 1552
       width: 830
       height: 260
     spriteID: b0ba7ffc7ea9fb6429e2fb559e6df4eb
@@ -305,7 +305,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1539, y: -2003}
+    uvTransform: {x: -1539, y: -1735}
   - name: RESUME
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -314,7 +314,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 670
-      y: 1552
+      y: 1820
       width: 734
       height: 260
     spriteID: 124aeb15be6269f4084e85c84dd6415d
@@ -327,7 +327,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -2595, y: -2123}
+    uvTransform: {x: -2595, y: -1855}
   - name: PAUSE
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -336,7 +336,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 670
-      y: 1820
+      y: 2088
       width: 580
       height: 260
     spriteID: dd72673e57de9434a9181442eb28ae04
@@ -349,7 +349,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1942, y: -1860}
+    uvTransform: {x: -1942, y: -1592}
   - name: START
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -372,7 +372,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -1899, y: -57}
-  - name: Health BarFill
+  - name: Game Over
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -381,9 +381,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 670
       y: 1098
-      width: 1291
-      height: 178
-    spriteID: 645777b3b99113341aabaa9c3f01a06e
+      width: 1058
+      height: 260
+    spriteID: 7267d0321c14647478fea145e15bda82
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -393,7 +393,29 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1659, y: -1307}
+    uvTransform: {x: -1703, y: -1811}
+  - name: Health BarFill
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 670
+      y: 1366
+      width: 1291
+      height: 178
+    spriteID: 352065eb0b3f37540896cad000dc0ba2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1657, y: -1040}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
@@ -462,20 +484,27 @@ ScriptedImporter:
     spriteID: aa8f9ec83c61cdc488ebd00890b1e42b
     layerID: 49
     mosaicPosition: {x: 4, y: 4}
+  - name: Game Over
+    spriteName: Game Over
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7267d0321c14647478fea145e15bda82
+    layerID: 67
+    mosaicPosition: {x: 670, y: 1098}
   - name: Health BarFill
     spriteName: Health BarFill
     isGroup: 0
     parentIndex: -1
-    spriteID: 645777b3b99113341aabaa9c3f01a06e
-    layerID: 51
-    mosaicPosition: {x: 670, y: 1098}
+    spriteID: 352065eb0b3f37540896cad000dc0ba2
+    layerID: 63
+    mosaicPosition: {x: 670, y: 1366}
   - name: QUIT
     spriteName: QUIT
     isGroup: 0
     parentIndex: -1
     spriteID: f824e1ae88fc2494db27ed905c481057
     layerID: 42
-    mosaicPosition: {x: 670, y: 2088}
+    mosaicPosition: {x: 670, y: 2356}
   - name: Layer 1
     spriteName: Layer 1
     isGroup: 0
@@ -489,21 +518,21 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: b0ba7ffc7ea9fb6429e2fb559e6df4eb
     layerID: 44
-    mosaicPosition: {x: 670, y: 1284}
+    mosaicPosition: {x: 670, y: 1552}
   - name: RESUME
     spriteName: RESUME
     isGroup: 0
     parentIndex: -1
     spriteID: 124aeb15be6269f4084e85c84dd6415d
     layerID: 40
-    mosaicPosition: {x: 670, y: 1552}
+    mosaicPosition: {x: 670, y: 1820}
   - name: PAUSE
     spriteName: PAUSE
     isGroup: 0
     parentIndex: -1
     spriteID: dd72673e57de9434a9181442eb28ae04
     layerID: 36
-    mosaicPosition: {x: 670, y: 1820}
+    mosaicPosition: {x: 670, y: 2088}
   - name: START
     spriteName: START
     isGroup: 0

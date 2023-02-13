@@ -19,9 +19,6 @@ public class PauseMenu : MonoBehaviour
     }
 
 
-
-
-
     public void Resume()
     {
         pauseButton.SetActive(true);
@@ -32,7 +29,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Restart()
     {
-        
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
