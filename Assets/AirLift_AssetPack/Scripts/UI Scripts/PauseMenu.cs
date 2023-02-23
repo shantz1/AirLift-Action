@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
     public GameObject pauseButton;
     private bool isPaused = false;
+    public AudioManager audioManager;
 
 
     public void Awake()
@@ -15,16 +16,19 @@ public class PauseMenu : MonoBehaviour
         pauseButton.SetActive(true);
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
-
     }
-
 
     public void Resume()
     {
+
+
         pauseButton.SetActive(true);
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
+        AudioManager.instance.unpauseSounds();
+
+
     }
 
     public void Restart()
@@ -43,14 +47,24 @@ public class PauseMenu : MonoBehaviour
     {
         if (!isPaused)
         {
+
             pauseButton.SetActive(false);
             pauseMenuUI.SetActive(true);
             Time.timeScale = 0f;
             isPaused = true;
+            AudioManager.instance.pauseSounds();
+           
+
         }
         else
         {
             Resume();
+
         }
+
+
+        
+
     }
+
 }

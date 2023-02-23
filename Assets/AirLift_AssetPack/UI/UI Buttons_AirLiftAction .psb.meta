@@ -1,7 +1,343 @@
 fileFormatVersion: 2
 guid: 105007a6016638f4d9ad9a183e4b6a30
 ScriptedImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5301159062621219606
+    second: UI Buttons_AirLiftAction _0
+  - first:
+      213: 3895491413563148779
+    second: UI Buttons_AirLiftAction _1
+  - first:
+      213: -966712886817611578
+    second: UI Buttons_AirLiftAction _2
+  - first:
+      213: -1152663731943702479
+    second: UI Buttons_AirLiftAction _3
+  - first:
+      213: -4766684263889089072
+    second: UI Buttons_AirLiftAction _4
+  - first:
+      213: -5672105891191694528
+    second: UI Buttons_AirLiftAction _5
+  - first:
+      213: 7885336185451361815
+    second: UI Buttons_AirLiftAction _6
+  - first:
+      213: -3683884138068035045
+    second: UI Buttons_AirLiftAction _7
+  - first:
+      213: 8999400112999460070
+    second: UI Buttons_AirLiftAction _8
+  - first:
+      213: -4346720024112079246
+    second: UI Buttons_AirLiftAction _9
+  - first:
+      213: -7525550704307053706
+    second: UI Buttons_AirLiftAction _10
+  - first:
+      213: -7320035704255739989
+    second: UI Buttons_AirLiftAction _11
+  - first:
+      213: -6635984597502791161
+    second: UI Buttons_AirLiftAction _12
+  - first:
+      213: 5582341217715919844
+    second: UI Buttons_AirLiftAction _13
+  - first:
+      213: -6132987304747245888
+    second: UI Buttons_AirLiftAction _14
+  - first:
+      213: 4459136024721068375
+    second: UI Buttons_AirLiftAction _15
+  - first:
+      213: -1425541914294813371
+    second: UI Buttons_AirLiftAction _16
+  - first:
+      213: 1856192428089424530
+    second: UI Buttons_AirLiftAction _17
+  - first:
+      213: -2289264399720433990
+    second: UI Buttons_AirLiftAction _18
+  - first:
+      213: 3127407409348971030
+    second: UI Buttons_AirLiftAction _19
+  - first:
+      213: 605465457608412511
+    second: UI Buttons_AirLiftAction _20
+  - first:
+      213: -2175507512977030404
+    second: UI Buttons_AirLiftAction _21
+  - first:
+      213: -1274263508521924344
+    second: UI Buttons_AirLiftAction _22
+  - first:
+      213: -8237527183918764761
+    second: UI Buttons_AirLiftAction _23
+  - first:
+      213: 5365078658820857362
+    second: UI Buttons_AirLiftAction _24
+  - first:
+      213: 1948710269491519321
+    second: UI Buttons_AirLiftAction _25
+  - first:
+      213: 8762129906078446302
+    second: UI Buttons_AirLiftAction _26
+  - first:
+      213: 5070945975565951738
+    second: UI Buttons_AirLiftAction _27
+  - first:
+      213: 7543916228046790314
+    second: UI Buttons_AirLiftAction _28
+  - first:
+      213: -252196051420064687
+    second: UI Buttons_AirLiftAction _29
+  - first:
+      213: -9016118316669979923
+    second: UI Buttons_AirLiftAction _30
+  - first:
+      213: -3959502175124316970
+    second: UI Buttons_AirLiftAction _31
+  - first:
+      213: -7010139355043770527
+    second: UI Buttons_AirLiftAction _32
+  - first:
+      213: 6397421319905173160
+    second: UI Buttons_AirLiftAction _33
+  - first:
+      213: 4991891239324461627
+    second: UI Buttons_AirLiftAction _34
+  - first:
+      213: -2652082649264342002
+    second: UI Buttons_AirLiftAction _35
+  - first:
+      213: -3139418467240167009
+    second: UI Buttons_AirLiftAction _36
+  - first:
+      213: 2123486224321801389
+    second: UI Buttons_AirLiftAction _37
+  - first:
+      213: 7899346089719837409
+    second: UI Buttons_AirLiftAction _38
+  - first:
+      213: 6408559771566810685
+    second: UI Buttons_AirLiftAction _39
+  - first:
+      213: 5982943829253971603
+    second: UI Buttons_AirLiftAction _40
+  - first:
+      213: 7455435816849239487
+    second: UI Buttons_AirLiftAction _41
+  - first:
+      213: 4007797776190518152
+    second: UI Buttons_AirLiftAction _42
+  - first:
+      213: 2967987188712138566
+    second: UI Buttons_AirLiftAction _43
+  - first:
+      213: -7233516745562304986
+    second: UI Buttons_AirLiftAction _44
+  - first:
+      213: 8758774065527707722
+    second: UI Buttons_AirLiftAction _45
+  - first:
+      213: 2844700854335959788
+    second: UI Buttons_AirLiftAction _46
+  - first:
+      213: -8284558763816595043
+    second: UI Buttons_AirLiftAction _47
+  - first:
+      213: 7438160630943354336
+    second: UI Buttons_AirLiftAction _48
+  - first:
+      213: 4089953964942439127
+    second: UI Buttons_AirLiftAction _49
+  - first:
+      213: 6865312538668584860
+    second: UI Buttons_AirLiftAction _50
+  - first:
+      213: -6014637080850872229
+    second: UI Buttons_AirLiftAction _51
+  - first:
+      213: 1301144420740135567
+    second: UI Buttons_AirLiftAction _52
+  - first:
+      213: -860754333117898022
+    second: UI Buttons_AirLiftAction _53
+  - first:
+      213: 2515197711935207967
+    second: UI Buttons_AirLiftAction _54
+  - first:
+      213: -427800884928965094
+    second: UI Buttons_AirLiftAction _55
+  - first:
+      213: 1952158575944354820
+    second: UI Buttons_AirLiftAction _56
+  - first:
+      213: -7351810625343092728
+    second: UI Buttons_AirLiftAction _57
+  - first:
+      213: 1229938090943299550
+    second: UI Buttons_AirLiftAction _58
+  - first:
+      213: 7844659483983249760
+    second: UI Buttons_AirLiftAction _59
+  - first:
+      213: 2344287988482797123
+    second: UI Buttons_AirLiftAction _60
+  - first:
+      213: 9153354389342040460
+    second: UI Buttons_AirLiftAction _61
+  - first:
+      213: 156142426642519014
+    second: UI Buttons_AirLiftAction _62
+  - first:
+      213: -1526036603002697694
+    second: UI Buttons_AirLiftAction _63
+  - first:
+      213: -8644817427678739
+    second: UI Buttons_AirLiftAction _64
+  - first:
+      213: 6687006441456992423
+    second: UI Buttons_AirLiftAction _65
+  - first:
+      213: -5248548800583964911
+    second: UI Buttons_AirLiftAction _66
+  - first:
+      213: -4486860871017689733
+    second: UI Buttons_AirLiftAction _67
+  - first:
+      213: 6806468007866081198
+    second: UI Buttons_AirLiftAction _68
+  - first:
+      213: 1328604687181584286
+    second: UI Buttons_AirLiftAction _69
+  - first:
+      213: -2358035124602695112
+    second: UI Buttons_AirLiftAction _70
+  - first:
+      213: 1707906674456581560
+    second: UI Buttons_AirLiftAction _71
+  - first:
+      213: 6327724866889631399
+    second: UI Buttons_AirLiftAction _72
+  - first:
+      213: 3488714578277826538
+    second: UI Buttons_AirLiftAction _73
+  - first:
+      213: -7167609029665157870
+    second: UI Buttons_AirLiftAction _74
+  - first:
+      213: -5297567806687017777
+    second: UI Buttons_AirLiftAction _75
+  - first:
+      213: -4802936831821298969
+    second: UI Buttons_AirLiftAction _76
+  - first:
+      213: -6515357453546805179
+    second: UI Buttons_AirLiftAction _77
+  - first:
+      213: 1559226840863803187
+    second: UI Buttons_AirLiftAction _78
+  - first:
+      213: 3756747247870973366
+    second: UI Buttons_AirLiftAction _79
+  - first:
+      213: -4231031209156718126
+    second: UI Buttons_AirLiftAction _80
+  - first:
+      213: -904308935411796647
+    second: UI Buttons_AirLiftAction _81
+  - first:
+      213: -6882114995854426526
+    second: UI Buttons_AirLiftAction _82
+  - first:
+      213: 4405290733785350266
+    second: UI Buttons_AirLiftAction _83
+  - first:
+      213: -7019690229718326138
+    second: UI Buttons_AirLiftAction _84
+  - first:
+      213: -3774630894337676786
+    second: UI Buttons_AirLiftAction _85
+  - first:
+      213: -3264032073985096867
+    second: UI Buttons_AirLiftAction _86
+  - first:
+      213: 1640383747843335285
+    second: UI Buttons_AirLiftAction _87
+  - first:
+      213: -7380837013426308250
+    second: UI Buttons_AirLiftAction _88
+  - first:
+      213: 5402510745509721051
+    second: UI Buttons_AirLiftAction _89
+  - first:
+      213: 8109127019228559437
+    second: UI Buttons_AirLiftAction _90
+  - first:
+      213: 2356829553048860090
+    second: UI Buttons_AirLiftAction _91
+  - first:
+      213: 8207174805528943806
+    second: UI Buttons_AirLiftAction _92
+  - first:
+      213: 3405674365176990768
+    second: UI Buttons_AirLiftAction _93
+  - first:
+      213: -122130044435376930
+    second: UI Buttons_AirLiftAction _94
+  - first:
+      213: -2158329192472947108
+    second: UI Buttons_AirLiftAction _95
+  - first:
+      213: -6652584247887130394
+    second: UI Buttons_AirLiftAction _96
+  - first:
+      213: 5487035944936847914
+    second: UI Buttons_AirLiftAction _97
+  - first:
+      213: -1932753914053410658
+    second: UI Buttons_AirLiftAction _98
+  - first:
+      213: 4162336837471942058
+    second: UI Buttons_AirLiftAction _99
+  - first:
+      213: 5498517368871521263
+    second: UI Buttons_AirLiftAction _100
+  - first:
+      213: 45855289007766403
+    second: UI Buttons_AirLiftAction _101
+  - first:
+      213: 3379712386944253052
+    second: UI Buttons_AirLiftAction _102
+  - first:
+      213: -655753595950496550
+    second: UI Buttons_AirLiftAction _103
+  - first:
+      213: -8274225420094154633
+    second: UI Buttons_AirLiftAction _104
+  - first:
+      213: 134389762707181699
+    second: UI Buttons_AirLiftAction _105
+  - first:
+      213: 3419120722889730456
+    second: UI Buttons_AirLiftAction _106
+  - first:
+      213: -5951406613605815060
+    second: UI Buttons_AirLiftAction _107
+  - first:
+      213: 7308019094105691710
+    second: UI Buttons_AirLiftAction _108
+  - first:
+      213: -8512374379833569213
+    second: UI Buttons_AirLiftAction _109
+  - first:
+      213: -7316028030526565186
+    second: UI Buttons_AirLiftAction _110
+  - first:
+      213: -8236029387670913982
+    second: UI Buttons_AirLiftAction _111
   externalObjects: {}
   serializedVersion: 2
   userData: 
@@ -86,7 +422,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Shape 1
+  - name: HomeButton
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -94,9 +430,9 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 1098
-      width: 658
-      height: 497
+      y: 797
+      width: 328
+      height: 250
     spriteID: 2ec9a4ef8dee56c40ac72ce1acb48afd
     internalID: 0
     spriteBone: []
@@ -107,8 +443,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -807, y: -1373}
-  - name: Layer 3 copy 3
+    uvTransform: {x: -401, y: -437}
+  - name: DeclineButton
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -116,9 +452,9 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 1603
-      width: 658
-      height: 497
+      y: 1313
+      width: 329
+      height: 250
     spriteID: a0d634ff17fd5b44db5216002f8721f8
     internalID: 0
     spriteBone: []
@@ -129,18 +465,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -104, y: -868}
-  - name: Layer 3 copy 2
+    uvTransform: {x: -49, y: 79}
+  - name: RetryButton
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 2108
-      width: 658
-      height: 497
+      x: 342
+      y: 1055
+      width: 328
+      height: 250
     spriteID: cc38593f09f7a234e861b02d6a234f62
     internalID: 0
     spriteBone: []
@@ -151,8 +487,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1465, y: -883}
-  - name: Layer 3 copy
+    uvTransform: {x: -392, y: -439}
+  - name: PauseButton
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -160,9 +496,9 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 2613
-      width: 658
-      height: 497
+      y: 1571
+      width: 329
+      height: 249
     spriteID: cd97fadca4f028d43b0990fd2490065d
     internalID: 0
     spriteBone: []
@@ -173,18 +509,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -787, y: -378}
-  - name: Layer 3
+    uvTransform: {x: -391, y: 77}
+  - name: PlayButtom
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 3118
-      width: 658
-      height: 497
+      x: 342
+      y: 797
+      width: 329
+      height: 250
     spriteID: c43939a35705f6c4a99e10cc05af0956
     internalID: 0
     spriteBone: []
@@ -195,7 +531,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -104, y: 127}
+    uvTransform: {x: 289, y: -697}
   - name: Layer 21 copy 3
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -203,10 +539,10 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1754
-      y: 593
-      width: 247
-      height: 291
+      x: 685
+      y: 807
+      width: 141
+      height: 153
     spriteID: b8e55d83ddc7d0348a55981ecb44eb7a
     internalID: 0
     spriteBone: []
@@ -217,8 +553,360 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -69, y: -1743}
+    uvTransform: {x: -218, y: -358}
   - name: HealthBar copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 883
+      y: 3
+      width: 978
+      height: 293
+    spriteID: aa8f9ec83c61cdc488ebd00890b1e42b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 45, y: -1085}
+  - name: QUIT
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 631
+      y: 1313
+      width: 202
+      height: 148
+    spriteID: f824e1ae88fc2494db27ed905c481057
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -948, y: -312}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 395
+      width: 870
+      height: 249
+    spriteID: 2768793fb85ef214f802c1bca9304014
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -23, y: -1377}
+  - name: RESTART copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 342
+      y: 1876
+      width: 416
+      height: 130
+    spriteID: b0ba7ffc7ea9fb6429e2fb559e6df4eb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -761, y: 234}
+  - name: RESUME
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1265
+      y: 402
+      width: 369
+      height: 131
+    spriteID: 124aeb15be6269f4084e85c84dd6415d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -366, y: -1434}
+  - name: PAUSE
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 884
+      y: 543
+      width: 291
+      height: 131
+    spriteID: dd72673e57de9434a9181442eb28ae04
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -421, y: -1296}
+  - name: START
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1641
+      y: 402
+      width: 306
+      height: 131
+    spriteID: 843f3fac1a6de06418b4d21b19539dca
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 690, y: -1437}
+  - name: Game Over
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 342
+      y: 1596
+      width: 531
+      height: 132
+    spriteID: 7267d0321c14647478fea145e15bda82
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -843, y: 143}
+  - name: Health BarFill
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 884
+      y: 304
+      width: 647
+      height: 90
+    spriteID: 352065eb0b3f37540896cad000dc0ba2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -278, y: -898}
+  - name: Layer 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1962
+      y: 612
+      width: 0
+      height: 0
+    spriteID: 5d625796486481146bdef1a68d5ccb45
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -86, y: -1436}
+  - name: Layer 9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1970
+      y: 612
+      width: 0
+      height: 0
+    spriteID: 27c2f6c639a7d12448d3ea4221429f7f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -78, y: -1436}
+  - name: Layer 11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 342
+      y: 1313
+      width: 281
+      height: 275
+    spriteID: 7ce5d739a2137dd4e9d82d3640e61abd
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1275, y: 1157}
+  - name: Layer 10 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1829
+      width: 290
+      height: 156
+    spriteID: dd2f89642c1468e42836b742fd72b12e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1486, y: 1554}
+  - name: Layer 10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1183
+      y: 612
+      width: 304
+      height: 118
+    spriteID: ac563764fdff7ae479cbb236e5975737
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 159, y: 370}
+  - name: '    When Enemy is in Range,Hold Right Side of sereen to shoot'
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 653
+      width: 642
+      height: 136
+    spriteID: 0c61d72aaccd15a438593ad83758d651
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1374, y: -165}
+  - name: '     Use Joystick to Move'
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1495
+      y: 612
+      width: 459
+      height: 57
+    spriteID: f859fe977e5c3024c85789dfdfee9710
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 197, y: -371}
+  - name: DialogBox
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -227,9 +915,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 1952
-      height: 581
-    spriteID: aa8f9ec83c61cdc488ebd00890b1e42b
+      width: 872
+      height: 383
+    spriteID: 6bd3648d5c7d5e34f8434bb1310c922e
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -239,19 +927,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1676, y: -2177}
-  - name: QUIT
+    uvTransform: {x: -97, y: -653}
+  - name: AcceptBtton
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 670
-      y: 2356
-      width: 401
-      height: 295
-    spriteID: f824e1ae88fc2494db27ed905c481057
+      x: 6
+      y: 1056
+      width: 326
+      height: 248
+    spriteID: a9e8b8d1155f4754282dad20f7c394d8
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -261,19 +949,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -2490, y: -896}
-  - name: Layer 1
+    uvTransform: {x: -994, y: 313}
+  - name: hold fire button to shoot
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 593
-      width: 1742
-      height: 497
-    spriteID: 2768793fb85ef214f802c1bca9304014
+      x: 1183
+      y: 543
+      width: 599
+      height: 61
+    spriteID: c05da53b93f93fe49b7d92996f711cb0
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -283,19 +971,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -52, y: -2954}
-  - name: RESTART copy
+    uvTransform: {x: -217, y: -199}
+  - name: volume
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 670
-      y: 1552
-      width: 830
-      height: 260
-    spriteID: b0ba7ffc7ea9fb6429e2fb559e6df4eb
+      x: 884
+      y: 402
+      width: 373
+      height: 133
+    spriteID: 8827bd9a08bcd8345b270ce1dd4ef538
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -305,19 +993,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1539, y: -1735}
-  - name: RESUME
+    uvTransform: {x: 746, y: 175}
+  - name: settings
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 670
-      y: 1820
-      width: 734
-      height: 260
-    spriteID: 124aeb15be6269f4084e85c84dd6415d
+      x: 342
+      y: 1735
+      width: 448
+      height: 133
+    spriteID: 416612deac90a0248bfaf34ca5a0d6aa
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -327,19 +1015,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -2595, y: -1855}
-  - name: PAUSE
+    uvTransform: {x: 241, y: 1314}
+  - name: Avoid
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 670
-      y: 2088
-      width: 580
-      height: 260
-    spriteID: dd72673e57de9434a9181442eb28ae04
+      x: 1539
+      y: 304
+      width: 501
+      height: 61
+    spriteID: a83ce355e9f58ce44a626d251b5cf249
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -349,197 +1037,233 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1942, y: -1592}
-  - name: START
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 3623
-      width: 612
-      height: 260
-    spriteID: 843f3fac1a6de06418b4d21b19539dca
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -1899, y: -57}
-  - name: Game Over
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 670
-      y: 1098
-      width: 1058
-      height: 260
-    spriteID: 7267d0321c14647478fea145e15bda82
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -1703, y: -1811}
-  - name: Health BarFill
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 670
-      y: 1366
-      width: 1291
-      height: 178
-    spriteID: 352065eb0b3f37540896cad000dc0ba2
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -1657, y: -1040}
-  platformSettings: []
+    uvTransform: {x: 110, y: -348}
+  platformSettings:
+  - name: Default
+    overridden: 1
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
   importedTextureWidth: 1024
-  importedTextureHeight: 2048
-  documentSize: {x: 4098, y: 4098}
+  importedTextureHeight: 1024
+  documentSize: {x: 2048, y: 2048}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   spriteCategoryList:
     categories: []
   textureActualWidth: 2048
-  textureActualHeight: 4096
+  textureActualHeight: 2048
   spritePackingTag: 
   resliceFromLayer: 0
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: Shape 1
-    spriteName: Shape 1
+  - name: HomeButton
+    spriteName: HomeButton
     isGroup: 0
     parentIndex: -1
     spriteID: 2ec9a4ef8dee56c40ac72ce1acb48afd
     layerID: 33
-    mosaicPosition: {x: 4, y: 1098}
-  - name: Layer 3 copy 3
-    spriteName: Layer 3 copy 3
+    mosaicPosition: {x: 4, y: 797}
+  - name: Layer 4
+    spriteName: Layer 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5d625796486481146bdef1a68d5ccb45
+    layerID: 82
+    mosaicPosition: {x: 1962, y: 612}
+  - name: Layer 9
+    spriteName: Layer 9
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 27c2f6c639a7d12448d3ea4221429f7f
+    layerID: 109
+    mosaicPosition: {x: 1970, y: 612}
+  - name: Layer 11
+    spriteName: Layer 11
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7ce5d739a2137dd4e9d82d3640e61abd
+    layerID: 112
+    mosaicPosition: {x: 342, y: 1313}
+  - name: Layer 10 copy
+    spriteName: Layer 10 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: dd2f89642c1468e42836b742fd72b12e
+    layerID: 113
+    mosaicPosition: {x: 4, y: 1829}
+  - name: Layer 10
+    spriteName: Layer 10
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ac563764fdff7ae479cbb236e5975737
+    layerID: 110
+    mosaicPosition: {x: 1183, y: 612}
+  - name: hold fire button to shoot
+    spriteName: hold fire button to shoot
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c05da53b93f93fe49b7d92996f711cb0
+    layerID: 121
+    mosaicPosition: {x: 1183, y: 543}
+  - name: '    When Enemy is in Range,Hold Right Side of sereen to shoot'
+    spriteName: '    When Enemy is in Range,Hold Right Side of sereen to shoot'
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0c61d72aaccd15a438593ad83758d651
+    layerID: 90
+    mosaicPosition: {x: 4, y: 653}
+  - name: '     Use Joystick to Move'
+    spriteName: '     Use Joystick to Move'
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f859fe977e5c3024c85789dfdfee9710
+    layerID: 88
+    mosaicPosition: {x: 1495, y: 612}
+  - name: DialogBox
+    spriteName: DialogBox
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6bd3648d5c7d5e34f8434bb1310c922e
+    layerID: 73
+    mosaicPosition: {x: 4, y: 4}
+  - name: volume
+    spriteName: volume
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8827bd9a08bcd8345b270ce1dd4ef538
+    layerID: 116
+    mosaicPosition: {x: 884, y: 402}
+  - name: settings
+    spriteName: settings
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 416612deac90a0248bfaf34ca5a0d6aa
+    layerID: 115
+    mosaicPosition: {x: 342, y: 1735}
+  - name: Avoid
+    spriteName: Avoid
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a83ce355e9f58ce44a626d251b5cf249
+    layerID: 126
+    mosaicPosition: {x: 1539, y: 304}
+  - name: AcceptBtton
+    spriteName: AcceptBtton
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a9e8b8d1155f4754282dad20f7c394d8
+    layerID: 84
+    mosaicPosition: {x: 4, y: 1055}
+  - name: DeclineButton
+    spriteName: DeclineButton
     isGroup: 0
     parentIndex: -1
     spriteID: a0d634ff17fd5b44db5216002f8721f8
     layerID: 28
-    mosaicPosition: {x: 4, y: 1603}
-  - name: Layer 3 copy 2
-    spriteName: Layer 3 copy 2
+    mosaicPosition: {x: 4, y: 1313}
+  - name: RetryButton
+    spriteName: RetryButton
     isGroup: 0
     parentIndex: -1
     spriteID: cc38593f09f7a234e861b02d6a234f62
     layerID: 21
-    mosaicPosition: {x: 4, y: 2108}
-  - name: Layer 3 copy
-    spriteName: Layer 3 copy
+    mosaicPosition: {x: 342, y: 1055}
+  - name: PauseButton
+    spriteName: PauseButton
     isGroup: 0
     parentIndex: -1
     spriteID: cd97fadca4f028d43b0990fd2490065d
     layerID: 14
-    mosaicPosition: {x: 4, y: 2613}
-  - name: Layer 3
-    spriteName: Layer 3
+    mosaicPosition: {x: 4, y: 1571}
+  - name: PlayButtom
+    spriteName: PlayButtom
     isGroup: 0
     parentIndex: -1
     spriteID: c43939a35705f6c4a99e10cc05af0956
     layerID: 12
-    mosaicPosition: {x: 4, y: 3118}
+    mosaicPosition: {x: 342, y: 797}
   - name: Layer 21 copy 3
     spriteName: Layer 21 copy 3
     isGroup: 0
     parentIndex: -1
     spriteID: b8e55d83ddc7d0348a55981ecb44eb7a
     layerID: 50
-    mosaicPosition: {x: 1754, y: 593}
+    mosaicPosition: {x: 680, y: 797}
   - name: HealthBar copy 3
     spriteName: HealthBar copy 3
     isGroup: 0
     parentIndex: -1
     spriteID: aa8f9ec83c61cdc488ebd00890b1e42b
     layerID: 49
-    mosaicPosition: {x: 4, y: 4}
+    mosaicPosition: {x: 884, y: 4}
   - name: Game Over
     spriteName: Game Over
     isGroup: 0
     parentIndex: -1
     spriteID: 7267d0321c14647478fea145e15bda82
     layerID: 67
-    mosaicPosition: {x: 670, y: 1098}
+    mosaicPosition: {x: 342, y: 1596}
   - name: Health BarFill
     spriteName: Health BarFill
     isGroup: 0
     parentIndex: -1
     spriteID: 352065eb0b3f37540896cad000dc0ba2
     layerID: 63
-    mosaicPosition: {x: 670, y: 1366}
+    mosaicPosition: {x: 884, y: 304}
   - name: QUIT
     spriteName: QUIT
     isGroup: 0
     parentIndex: -1
     spriteID: f824e1ae88fc2494db27ed905c481057
     layerID: 42
-    mosaicPosition: {x: 670, y: 2356}
+    mosaicPosition: {x: 631, y: 1313}
   - name: Layer 1
     spriteName: Layer 1
     isGroup: 0
     parentIndex: -1
     spriteID: 2768793fb85ef214f802c1bca9304014
     layerID: 2
-    mosaicPosition: {x: 4, y: 593}
+    mosaicPosition: {x: 4, y: 395}
   - name: RESTART copy
     spriteName: RESTART copy
     isGroup: 0
     parentIndex: -1
     spriteID: b0ba7ffc7ea9fb6429e2fb559e6df4eb
     layerID: 44
-    mosaicPosition: {x: 670, y: 1552}
+    mosaicPosition: {x: 342, y: 1876}
   - name: RESUME
     spriteName: RESUME
     isGroup: 0
     parentIndex: -1
     spriteID: 124aeb15be6269f4084e85c84dd6415d
     layerID: 40
-    mosaicPosition: {x: 670, y: 1820}
+    mosaicPosition: {x: 1265, y: 402}
   - name: PAUSE
     spriteName: PAUSE
     isGroup: 0
     parentIndex: -1
     spriteID: dd72673e57de9434a9181442eb28ae04
     layerID: 36
-    mosaicPosition: {x: 670, y: 2088}
+    mosaicPosition: {x: 884, y: 543}
   - name: START
     spriteName: START
     isGroup: 0
     parentIndex: -1
     spriteID: 843f3fac1a6de06418b4d21b19539dca
     layerID: 37
-    mosaicPosition: {x: 4, y: 3623}
+    mosaicPosition: {x: 1641, y: 402}
   characterData:
     bones: []
     parts: []

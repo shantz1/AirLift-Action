@@ -13,12 +13,13 @@ public class TowingMechanism : MonoBehaviour
     void Start()
     {
         targetPos = jeep.transform.position;
+        AudioManager.instance.Play("JeepSfx");
     }
 
     void Update()
     {
         // Update the target position for the jeep based on the helicopter's Z position
-        targetPos.z = helicopter.transform.position.z;
+        targetPos.z = helicopter.transform.position.z-2;
         targetPos.x = helicopter.transform.position.x;
 
         // Move the jeep towards the target position

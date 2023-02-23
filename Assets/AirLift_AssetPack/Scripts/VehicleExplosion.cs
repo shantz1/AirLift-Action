@@ -14,17 +14,16 @@ public class VehicleExplosion : MonoBehaviour
     private bool isExploded = false;
     private Rigidbody[] explodableRigidbodies;
 
-    private EnemyHealth Health;
-
-
+    private EnemyHealth enemyHealth;
 
     private void Start()
     {
-        Health = GetComponent<EnemyHealth>();
+        enemyHealth = GetComponent<EnemyHealth>();
     }
     private void Update()
     {
-        if (Health.dead)
+
+        if (enemyHealth.dead)
         {
             Explode();
         }
@@ -32,8 +31,7 @@ public class VehicleExplosion : MonoBehaviour
         if (isExploded)
 
         {
-            Destroy(gameObject, 0.5f);//destroy the entire object
-
+            Destroy(gameObject, 0.5f);//destroy the entire objects
         }
     }
 

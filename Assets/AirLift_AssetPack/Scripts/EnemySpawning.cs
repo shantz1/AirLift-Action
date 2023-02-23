@@ -15,6 +15,7 @@ public class Wave
     public string waveName;
     public WaveEnemy[] waveEnemies;
 }
+
 public class EnemySpawning : MonoBehaviour
 {
     public Wave[] waves;
@@ -22,14 +23,21 @@ public class EnemySpawning : MonoBehaviour
 
     public float timeBetweenWaves = 5f;
     public float timeBetweenEnemies = 1f;
+    public float initialDelay = 0f; // added initial delay option
 
     private int waveIndex = 0;
 
     private void Start()
     {
-        StartCoroutine(SpawnWaves());
+        
+        StartCoroutine(SpawnWithInitialDelay()); // call the new method with delay
     }
 
+    IEnumerator SpawnWithInitialDelay()
+    {
+        yield return new WaitForSeconds(initialDelay); // wait for the initial delay
+        StartCoroutine(SpawnWaves());
+    }
     IEnumerator SpawnWaves()
     {
         while (true)

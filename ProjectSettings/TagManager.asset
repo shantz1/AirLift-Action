@@ -11,6 +11,8 @@ TagManager:
   - EnemySoldier
   - EnemyBullet
   - Medikit
+  - EnemyHelicoptor
+  - Terrain
   layers:
   - Default
   - TransparentFX

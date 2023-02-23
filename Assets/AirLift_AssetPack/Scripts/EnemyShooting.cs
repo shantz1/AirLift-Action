@@ -5,7 +5,7 @@ public class EnemyShooting : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
-
+    public AudioSource shootingSound;
     public float sphereCastRadius = 5f;
     public float attackDelay = 5f;
     public float fireRateMin = 1f;
@@ -36,7 +36,7 @@ public class EnemyShooting : MonoBehaviour
     private void CheckPlayerInRange()
     {
         RaycastHit hit;
-        if (Physics.SphereCast(firePoint.position, sphereCastRadius, firePoint.forward, out hit,25f))
+        if (Physics.SphereCast(firePoint.position, sphereCastRadius, firePoint.forward, out hit, 25f))
         {
             if (hit.collider.CompareTag("PlayerJeep"))
             {
@@ -68,10 +68,13 @@ public class EnemyShooting : MonoBehaviour
         for (int i = 0; i < numberOfBullets; i++)
         {
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            shootingSound.Play();
+
             float bulletSpawnTime = Random.Range(bulletSpawnTimeMin, bulletSpawnTimeMax);
             yield return new WaitForSeconds(bulletSpawnTime);
         }
         attackValue = 0f;
+
         isShooting = false;
     }
 }

@@ -116,8 +116,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4add115b9b71efe49bbc6369f0b96c61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -1
-  moveForward: 0
+  speed: 7
+  moveForward: 1
 --- !u!65 &1553480365356110408
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -297,7 +297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   game_Object: {fileID: 0}
-  maxHealth: 10
+  maxHealth: 20
   healthBarUI: {fileID: 4129674137648024860}
   healthSlider: {fileID: 4849244580626347070}
   dead: 0
@@ -1188,7 +1188,6 @@ GameObject:
   - component: {fileID: 4595346058014845443}
   - component: {fileID: 8121915742429477533}
   - component: {fileID: 8706958100474708885}
-  - component: {fileID: 2101837328292300266}
   - component: {fileID: 9158805436053256166}
   - component: {fileID: 1964528846392691622}
   m_Layer: 0
@@ -1239,7 +1238,7 @@ Animator:
   m_GameObject: {fileID: 693179669270337552}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 6b7de830779bd9e468c9b4abe684a562, type: 3}
-  m_Controller: {fileID: 9100000, guid: 515a51e29f44e2e4d96a2bbe9cd545e2, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -1264,28 +1263,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &2101837328292300266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 693179669270337552}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28ade79a57b69f64dbdde8071444a505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 8372786025416033053, guid: 38340bf5e75dc144fa963f6f0bf64344,
-    type: 3}
-  bulletSpawnPoint: {fileID: 4630474697558953858}
-  bulletSpeed: 1
-  bulletsPerSecond: 10
-  range: 25
-  shootingSound: {fileID: 9158805436053256166}
-  enemyTag: Player
-  rayStartPoint: {fileID: 4630474697558953858}
-  poolSize: 10
 --- !u!82 &9158805436053256166
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1398,6 +1375,7 @@ MonoBehaviour:
   firePoint: {fileID: 4630474697558953858}
   bulletPrefab: {fileID: 8372786025416033053, guid: 38340bf5e75dc144fa963f6f0bf64344,
     type: 3}
+  shootingSound: {fileID: 9158805436053256166}
   sphereCastRadius: 5
   attackDelay: 2
   fireRateMin: 5
@@ -3550,7 +3528,6 @@ GameObject:
   - component: {fileID: 1605394537481221427}
   - component: {fileID: 6427943304787502509}
   - component: {fileID: 5861196826868030629}
-  - component: {fileID: 3794646474178435802}
   - component: {fileID: 7001002049554315546}
   - component: {fileID: 5461035336000489978}
   m_Layer: 0
@@ -3601,7 +3578,7 @@ Animator:
   m_GameObject: {fileID: 2313961852825847584}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 6b7de830779bd9e468c9b4abe684a562, type: 3}
-  m_Controller: {fileID: 9100000, guid: 515a51e29f44e2e4d96a2bbe9cd545e2, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -3626,28 +3603,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &3794646474178435802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2313961852825847584}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28ade79a57b69f64dbdde8071444a505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 8372786025416033053, guid: 38340bf5e75dc144fa963f6f0bf64344,
-    type: 3}
-  bulletSpawnPoint: {fileID: 7620287396125561010}
-  bulletSpeed: 1
-  bulletsPerSecond: 10
-  range: 25
-  shootingSound: {fileID: 7001002049554315546}
-  enemyTag: Player
-  rayStartPoint: {fileID: 7620287396125561010}
-  poolSize: 10
 --- !u!82 &7001002049554315546
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3760,6 +3715,7 @@ MonoBehaviour:
   firePoint: {fileID: 7620287396125561010}
   bulletPrefab: {fileID: 8372786025416033053, guid: 38340bf5e75dc144fa963f6f0bf64344,
     type: 3}
+  shootingSound: {fileID: 7001002049554315546}
   sphereCastRadius: 5
   attackDelay: 2
   fireRateMin: 5
@@ -7560,7 +7516,6 @@ GameObject:
   - component: {fileID: 8688011301374224347}
   - component: {fileID: 4026536431892789061}
   - component: {fileID: 4576398953335705165}
-  - component: {fileID: 6520314170448988210}
   - component: {fileID: 944210355199860918}
   - component: {fileID: 3250526691276039189}
   m_Layer: 0
@@ -7611,7 +7566,7 @@ Animator:
   m_GameObject: {fileID: 5677172054972667336}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 6b7de830779bd9e468c9b4abe684a562, type: 3}
-  m_Controller: {fileID: 9100000, guid: 515a51e29f44e2e4d96a2bbe9cd545e2, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -7636,28 +7591,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &6520314170448988210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5677172054972667336}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28ade79a57b69f64dbdde8071444a505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 8372786025416033053, guid: 38340bf5e75dc144fa963f6f0bf64344,
-    type: 3}
-  bulletSpawnPoint: {fileID: 510374534518768218}
-  bulletSpeed: 1
-  bulletsPerSecond: 10
-  range: 25
-  shootingSound: {fileID: 944210355199860918}
-  enemyTag: Player
-  rayStartPoint: {fileID: 510374534518768218}
-  poolSize: 10
 --- !u!82 &944210355199860918
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7770,6 +7703,7 @@ MonoBehaviour:
   firePoint: {fileID: 510374534518768218}
   bulletPrefab: {fileID: 8372786025416033053, guid: 38340bf5e75dc144fa963f6f0bf64344,
     type: 3}
+  shootingSound: {fileID: 944210355199860918}
   sphereCastRadius: 5
   attackDelay: 2
   fireRateMin: 5
