@@ -61,9 +61,19 @@ public class MedkitSpawner : MonoBehaviour
         if (canSpawn)
         {
             Instantiate(objectToSpawn, spawnPosition, spawnPoints[spawnPointIndex].rotation);
+
         }
+
 
         // Schedule the next spawn time
         Invoke("SpawnObject", Random.Range(minSpawnTime, maxSpawnTime));
+    }
+
+    void OnTriggerEnter(Collider collider)
+    {
+        if (collider.CompareTag("PlayerJeep"))
+        {
+            SoundManager.Instance.PlaySound(SoundManager.Instance.Truck);
+        }
     }
 }

@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TutorialManager : MonoBehaviour
 
@@ -10,7 +12,10 @@ public class TutorialManager : MonoBehaviour
     private int currentFunctionality = 0;
     private bool tutorialActive = false;
     private float previousTimeScale = 1f;
+    
 
+   
+    
     void Start()
     {
         // Initialize the hasShownTutorial array
@@ -42,7 +47,7 @@ public class TutorialManager : MonoBehaviour
         previousTimeScale = Time.timeScale;
         Time.timeScale = 0;
         tutorialPanels[currentFunctionality].SetActive(true);
-        
+       
     }
 
     public void HideTutorial()
@@ -53,6 +58,7 @@ public class TutorialManager : MonoBehaviour
         PlayerPrefs.Save();
         tutorialActive = false;
         Time.timeScale = previousTimeScale;
+       
     }
 
     public void NextFunctionality()

@@ -34,7 +34,7 @@ public class TileSpawning : MonoBehaviour
     void SpawnTerrain()
     {
         GameObject terrain = Instantiate(terrainPrefabs[terrainIndex]);
-        terrain.transform.position = new Vector3(0, 0, endZPosition);
+        terrain.transform.position = new Vector3(0, 0, endZPosition - tileLength);
         endZPosition += tileLength;
         terrainQueue.Enqueue(terrain);
 
