@@ -23,6 +23,8 @@ public class SoundManager : MonoBehaviour
     public AudioClip Truck;
     public AudioClip reload;
     public AudioClip gameOver;
+    public AudioClip bulletHit;
+    public AudioClip healthGain;
     
 
    public void PlaySound(AudioClip clipName )

@@ -9,7 +9,7 @@ public class GameOver : MonoBehaviour
     public GameObject GameoverUI;
     public GameObject pauseButton;
     public HelicoptorCollider hc;
-    
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -27,7 +27,7 @@ public class GameOver : MonoBehaviour
             AudioManager.instance.pauseSounds();
             SoundManager.Instance.PlaySound(SoundManager.Instance.gameOver);
         }
-        if(healthscript.gameOver)
+        if (healthscript.gameOver)
         {
             GameoverUI.SetActive(true);
             pauseButton.SetActive(false);
@@ -44,12 +44,12 @@ public class GameOver : MonoBehaviour
 
     public IEnumerator WaitBeforeDie()
     {
-        
+
         yield return new WaitForSeconds(2f);
         OnDie();
-    
+
     }
-    
+
     public void OnDie()
     {
         Time.timeScale = 0f;

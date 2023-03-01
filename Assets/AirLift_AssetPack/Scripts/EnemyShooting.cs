@@ -40,6 +40,7 @@ public class EnemyShooting : MonoBehaviour
         {
             if (hit.collider.CompareTag("PlayerJeep"))
             {
+
                 playerInRange = true;
                 return;
             }

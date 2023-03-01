@@ -35,6 +35,7 @@ public class Bullet : MonoBehaviour
     {
         if (collider.CompareTag("Enemy"))
         {
+            SoundManager.Instance.PlaySound(SoundManager.Instance.bulletHit);
             Hide();
         }
 

@@ -73,7 +73,7 @@ public class MedkitSpawner : MonoBehaviour
     {
         if (collider.CompareTag("PlayerJeep"))
         {
-            SoundManager.Instance.PlaySound(SoundManager.Instance.Truck);
+            
         }
     }
 }

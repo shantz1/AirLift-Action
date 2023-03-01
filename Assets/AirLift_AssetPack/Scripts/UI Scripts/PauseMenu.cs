@@ -10,6 +10,13 @@ public class PauseMenu : MonoBehaviour
     private bool isPaused = false;
     public AudioManager audioManager;
 
+    private void OnApplicationPause(bool pauseStatus)
+    {
+        if (!pauseStatus)
+        {
+            Pause();
+        }
+    }
 
     public void Awake()
     {
@@ -20,20 +27,15 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
-
-
         pauseButton.SetActive(true);
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
         AudioManager.instance.unpauseSounds();
-
-
     }
 
     public void Restart()
     {
-
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -47,24 +49,15 @@ public class PauseMenu : MonoBehaviour
     {
         if (!isPaused)
         {
-
             pauseButton.SetActive(false);
             pauseMenuUI.SetActive(true);
             Time.timeScale = 0f;
             isPaused = true;
             AudioManager.instance.pauseSounds();
-           
-
         }
         else
         {
             Resume();
-
         }
-
-
-        
-
     }
-
 }

@@ -14,8 +14,9 @@ public class MediBoxItem : MonoBehaviour
 
         if (collider.CompareTag("PlayerJeep"))
         {
-            //   playerhealth.HealthIncrease(); //I have called that function from healthcs here got it bro
+            //   playerhealth.HealthIncrease(); 
             Destroy(gameObject);
+            SoundManager.Instance.PlaySound(SoundManager.Instance.healthGain);
         }
     }
 }

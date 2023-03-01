@@ -5,17 +5,18 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class TutorialManager : MonoBehaviour
-
 {
     [SerializeField] private GameObject[] tutorialPanels;
+    [SerializeField] private GameObject pauseButton;
+    [SerializeField] private GameObject takedownCounter;
+    [SerializeField] private GameObject joystick;
+    [SerializeField] private GameObject firingButton;
+    [SerializeField] private GameObject healthBar;
     private bool[] hasShownTutorial;
     private int currentFunctionality = 0;
     private bool tutorialActive = false;
     private float previousTimeScale = 1f;
-    
 
-   
-    
     void Start()
     {
         // Initialize the hasShownTutorial array
@@ -33,21 +34,30 @@ public class TutorialManager : MonoBehaviour
         {
             tutorialActive = false;
             Time.timeScale = previousTimeScale;
+            pauseButton.SetActive(true);
+            takedownCounter.SetActive(true);
+            joystick.SetActive(true);
+            firingButton.SetActive(true);
+            healthBar.SetActive(true);
+
         }
         else
         {
             ShowTutorial();
+            pauseButton.SetActive(false);
+            takedownCounter.SetActive(false);
+            joystick.SetActive(false);
+            firingButton.SetActive(false);
+            healthBar.SetActive(false);
         }
     }
 
     void ShowTutorial()
     {
-        
         tutorialActive = true;
         previousTimeScale = Time.timeScale;
         Time.timeScale = 0;
         tutorialPanels[currentFunctionality].SetActive(true);
-       
     }
 
     public void HideTutorial()
@@ -58,7 +68,11 @@ public class TutorialManager : MonoBehaviour
         PlayerPrefs.Save();
         tutorialActive = false;
         Time.timeScale = previousTimeScale;
-       
+        pauseButton.SetActive(true);
+        takedownCounter.SetActive(true);
+        joystick.SetActive(true);
+        firingButton.SetActive(true);
+        healthBar.SetActive(true);
     }
 
     public void NextFunctionality()
@@ -76,6 +90,11 @@ public class TutorialManager : MonoBehaviour
         {
             tutorialActive = false;
             Time.timeScale = previousTimeScale;
+            pauseButton.SetActive(true);
+            takedownCounter.SetActive(true);
+            joystick.SetActive(true);
+            firingButton.SetActive(true);
+            healthBar.SetActive(true);
         }
     }
 
@@ -92,11 +111,21 @@ public class TutorialManager : MonoBehaviour
         if (currentFunctionality < tutorialPanels.Length)
         {
             ShowTutorial();
+            pauseButton.SetActive(false);
+            takedownCounter.SetActive(false);
+            joystick.SetActive(false);
+            firingButton.SetActive(false);
+            healthBar.SetActive(false);
         }
         else
         {
             tutorialActive = false;
             Time.timeScale = previousTimeScale;
+            pauseButton.SetActive(true);
+            takedownCounter.SetActive(true);
+            joystick.SetActive(true);
+            firingButton.SetActive(true);
+            healthBar.SetActive(true);
         }
     }
 }
